@@ -1,0 +1,33 @@
+# .env
+
+# django db
+DB_DRIVER=django.db.backends.postgresql
+DB_NAME=postgres
+DB_USER=postgres   
+DB_PASSWORD=postgres
+DB_HOST=db
+DB_PORT=5432
+
+# db
+# DATABASE_URL=postgres://bixcwxzohfmfkq:9de2c26f3f506b9d3579c5ac393191d91dfc7cb47190ebcd671f96fc398e8798@ec2-44-220-7-157.compute-1.amazonaws.com:5432/d2f7tbidit5qju
+
+# POSTGRES_USER=postgres
+# POSTGRES_PASSWORD=postgres
+# POSTGRES_DB=postgres
+
+# localhost
+# SECRET_KEY=django-insecure-t5d!vfekqxou)a+^=bovbqj5m-f(n^3c2k51zlodq%kmpvlht-
+
+SECRET_KEY=django-insecure-n%sgub%51!t$(j&ml-cex7g"#"k$h)5x_zja%pkg+f!^@+owi"#"h=
+DEBUG=True
+# Dev
+# ALLOWED_HOSTS=127.0.0.1,.localhost
+# Production
+ALLOWED_HOSTS=127.0.0.1,.localhost, 0.0.0.0
+# Emails
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_USE_TLS=True
+EMAIL_HOST_USER=alexandrepaescontato@gmail.com
+EMAIL_HOST_PASSWORD=<your@passwd>
+
