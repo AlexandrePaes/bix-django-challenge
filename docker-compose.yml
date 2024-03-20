@@ -1,0 +1,47 @@
+version: '3.9'
+
+services:
+  web:
+    container_name: appbix
+    build: .
+    command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=1
+      - DATABASE_URL=DATABASE_URL
+    depends_on:
+      - redis
+      - db
+  celery_worker:
+    build:
+      context: .
+      dockerfile: ./Dockerfile-celery-worker
+    volumes:
+      - .:/appbix
+    depends_on:
+      - redis
+    networks:
+      - hotel-network
+  redis:
+    image: "redis:latest"
+    networks:
+      - hotel-network
+  db:
+    image: "postgres:latest"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+    ports:
+      - "5432:5432"
+#     volumes:
+#       - pgdata:/var/lib/postgresql/data
+
+# volumes:
+#   pgdata: {} 
+
+# 7683977ad6c9788f1e676c5ab2d6f3f2365bbb9b96419a8637b281d74b827f97
+networks:
+  hotel-network:
+    external: true

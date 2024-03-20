@@ -1,0 +1,11 @@
+FROM python:3.9-slim
+
+WORKDIR /appbix
+
+COPY requirements.txt .
+
+RUN pip install redis celery
+
+COPY . /app
+
+CMD ["celery", "-A", "hotel", "beat", "-l", "info", "--scheduler", "django_celery_beat.schedulers:DatabaseScheduler"]
