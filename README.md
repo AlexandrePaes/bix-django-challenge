@@ -9,9 +9,9 @@ This is a simple Hotel Reservation and Management Backend Software as part of th
 
 
 ### A few more repos in case it's needed
-1. [title](https://github.com/LondonComputadores?tab=repositories)
-2. [title](https://gitlab.com/LondonComputadores)
+1. [Github](https://github.com/LondonComputadores?tab=repositories)
+2. [Gitlab](https://gitlab.com/LondonComputadores)
 
 ##### Gitlab Projects' images from loggged in user
 
-![alt text](gitlab.jpg)
+![Gitlab Projects' Images](gitlab.png)
