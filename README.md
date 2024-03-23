@@ -12,6 +12,6 @@ This is a simple Hotel Reservation and Management Backend Software as part of th
 1. [My Main Github](https://github.com/LondonComputadores?tab=repositories)
 2. [Gitlab For My DevOps Projects](https://gitlab.com/LondonComputadores)
 
-##### Gitlab Projects' images from loggged in user perspective
+##### Gitlab Hand-On Projects' image from loggged in user perspective for my Coffee and IT DevOps Certification
 
 ![Gitlab Projects' Image](gitlab.png)
