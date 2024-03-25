@@ -1,0 +1,11 @@
+.git
+.gitignore
+.venv
+venv
+__pycache__/
+/setup.cfg
+docker-compose.yml
+docker-compose-deploy.yaml
+Dockerfile
+Makefile
+README.md

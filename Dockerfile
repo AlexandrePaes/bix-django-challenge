@@ -12,7 +12,8 @@ COPY ./requirements.txt /requirements.txt
 WORKDIR /appbix
 
 # Copy .env file to container
-COPY .env /app/.env
+# COPY .env /app/.env
+COPY .env /appbix/.env
 
 # Make port 8000 available to the world outside this container
 EXPOSE 8000
@@ -26,9 +27,9 @@ RUN python -m venv /py && \
     apk add zlib-dev jpeg-dev gcc musl-dev && \
     #/py/bin/pip install Pillow && \
     apk del .tmp-deps && \
-    adduser --disabled-password --no-create-home lgpd
+    adduser --disabled-password --no-create-home hotel
 
 ENV PATH="/py/bin:$PATH"
 
 # Run the web server on port $PORT
-CMD gunicorn lgpd.wsgi --bind 0.0.0.0:$PORT
+CMD gunicorn hotel.wsgi --bind 0.0.0.0:$PORT

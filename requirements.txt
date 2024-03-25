@@ -15,7 +15,7 @@ defusedxml==0.7.1
 dj-database-url==2.1.0
 dj-rest-auth==4.0.0
 dj-static==0.0.6
-Django==4.2.0
+Django==4.2
 django-allauth==0.61.1
 django-appconf==1.0.6
 django-celery-beat==2.6.0
@@ -27,8 +27,10 @@ django-timezone-field==6.1.0
 djangorestframework==3.14.0
 djangorestframework-jwt==1.11.0
 djangorestframework-simplejwt==4.2.0
+drf-yasg==1.21.7
 gunicorn==21.2.0
 idna==3.6
+inflection==0.5.1
 kombu==5.3.5
 oauthlib==3.2.2
 packaging==24.0
@@ -43,6 +45,7 @@ python-decouple==3.8
 python-dotenv==1.0.1
 python3-openid==3.2.0
 pytz==2024.1
+PyYAML==6.0.1
 redis==5.0.3
 requests==2.31.0
 requests-oauthlib==1.4.0
@@ -51,6 +54,7 @@ sqlparse==0.4.4
 static3==0.7.0
 typing_extensions==4.10.0
 tzdata==2024.1
+uritemplate==4.1.1
 urllib3==2.2.1
 vine==5.1.0
 wcwidth==0.2.13
